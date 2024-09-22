@@ -1,0 +1,14 @@
+<%- include('index') %>
+<h2>Pedidos</h2>
+<table>
+  <tr>
+    <th>Número</th>
+    <th>Valor</th>
+  </tr>
+  <% pedidos.forEach(pedido => { %>
+    <tr>
+      <td><%= pedido.numero %></td>
+      <td><%= pedido.valor %></td>
+    </tr>
+  <% }) %>
+</table>
